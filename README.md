@@ -13,17 +13,18 @@ Both skills live where Cursor reads them automatically:
 
 ## Once
 
+Clone this repo into a new folder and open that folder as the Cursor project. Start the agent chat in that project. The skills load from `.cursor/skills/` in this repo. Do not copy them into another project.
+
+```
+git clone https://github.com/frangoni-fp/web-wcag.git
+```
+
 1. Make sure the Webflow MCP connection in Cursor is signed in.
 2. If you are running `felix-page-accessibility`, open **Félix - Main** in the Webflow Designer and keep that tab in front. (`webflow-mcp:accessibility-audit` runs headlessly and does not need the Designer open.)
 
-Claude Code reads skills from `.claude/skills/`. Copy the folders there once if you use Claude Code:
-
-`.cursor/skills/felix-page-accessibility/` → `.claude/skills/felix-page-accessibility/`
-`.cursor/skills/webflow-mcp-accessibility-audit/` → `.claude/skills/webflow-mcp-accessibility-audit/`
-
 ## Running `felix-page-accessibility` (one-page fix loop)
 
-Start a new chat. One page per chat. Paste this and replace the bracket:
+In this project, start a new agent chat. One page per chat. Paste this and replace the bracket:
 
 ```
 Use the felix-page-accessibility skill on [page name or path].
@@ -38,7 +39,7 @@ Then publish the page yourself, check the keyboard, and run ANDI on the live URL
 
 ## Running `webflow-mcp:accessibility-audit` (headless audit)
 
-Use this for a fast WCAG 2.1 audit report without connecting to the Webflow Designer. Start a new chat and paste:
+Use this for a fast WCAG 2.1 audit report without connecting to the Webflow Designer. In this project, start a new agent chat and paste:
 
 ```
 Use the webflow-mcp:accessibility-audit skill on [page name, path, or page ID] on Félix - Main.
