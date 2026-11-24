@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "skills": {
+    "webflow-mcp:accessibility-audit": {
+      "source": "webflow/webflow-skills",
+      "commit": "eaaecc6adeb27b450698519bd3ae4612848440b9",
+      "sourceType": "github",
+      "skillPath": "plugins/webflow-skills/skills/accessibility-audit/SKILL.md",
+      "computedHash": "2fc0daea4d50bc8a880e2f7b35ba061cbc918b19e45c125569bfd90c9da6d553"
+    }
+  }
+}
